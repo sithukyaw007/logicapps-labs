@@ -1,15 +1,20 @@
 {
     "name": "Docusaurus editor codespace",
-    "extensions": [
-        "yzhang.markdown-all-in-one"
-    ],
-    "dockerFile": "Dockerfile",
-    "forwardPorts": [5000, 5001, 7071],
-    "settings": {
-      "terminal.integrated.shell.linux": "/usr/bin/zsh",
-      "files.exclude": {
-        "**/CODE_OF_CONDUCT.md": true,
-        "**/LICENSE": true
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "yzhang.markdown-all-in-one"
+        ],
+        "settings": {
+          "files.exclude": {
+            "**/CODE_OF_CONDUCT.md": true,
+            "**/LICENSE": true
+          }
+        }
       }
-    }
+    },
+    "forwardPorts": [5000, 5001, 7071]
   }

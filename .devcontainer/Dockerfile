@@ -1,5 +1,5 @@
-# Ubuntu 18.04 LTS
-FROM ubuntu:24.10
+# Ubuntu 24.04 LTS
+FROM ubuntu:24.04
 
 WORKDIR /home/
 
